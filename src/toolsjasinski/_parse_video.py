@@ -49,4 +49,4 @@ def parse_video(
             #videof = nd2.ND2File(path)
             image = nd2.imread(path, xarray=True, dask=True)
 
-    return canonicalize_video(image)
+    return canonicalize_video(image, **kwargs)

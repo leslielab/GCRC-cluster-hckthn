@@ -139,7 +139,7 @@ def canonicalize_video(
         )
         ome = OME(
             images=[image],
-            creator=(creator or "MPL Erlangen, Sandoghdar Division, toolsandogh"),
+            creator=(creator or "N/A"),
         )
         video = video.assign_attrs({"processed": ome})
 
